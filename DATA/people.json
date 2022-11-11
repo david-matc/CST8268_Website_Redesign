@@ -3,13 +3,21 @@
     "people":[
         {
             "Name": "",
-            "img_path": "",
+            "image": {
+                "width": "",
+                "height": "",
+                "path": ""
+            },
             "description": ""
         },
-        
+
         {
             "Name": "",
-            "img_path": "",
+            "image": {
+                "width": "",
+                "height": "",
+                "path": ""
+            },
             "description": ""
         }
     ]
