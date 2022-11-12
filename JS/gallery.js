@@ -1,8 +1,13 @@
-fetch('DATA/people.json').then(function (response){
-    return response.json();
-}).then((obj){
-    console.log(obj);
-}).catch(function(error){
-    console.error('something went wrong with retrieving the people');
-    console.error(error);
+var peopleJson;
+var path = '/DATA/people.json';
+
+$(document).ready(async function () {
+    peopleJson = await getJSON();
+    console.log(peopleJson);
 });
+
+async function getJSON() {
+    return await fetch(path)
+        .then((response)=>response.json())
+        .then((responseJson)=>{return responseJson});
+}
